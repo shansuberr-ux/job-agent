@@ -1,0 +1,570 @@
+[
+  {
+    "id": 2432910786,
+    "date_posted": "2026-10-25T00:00:00",
+    "date_created": "2026-10-25T17:43:59.036523",
+    "title": "Principal Design Engineer",
+    "organization": "Cadence Design Systems",
+    "organization_url": null,
+    "date_valid_through": "2026-12-28T00:00:00",
+    "locations": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "India",
+          "addressLocality": "BANGALORE 05"
+        }
+      }
+    ],
+    "locations_alt": [
+      "Bangalore, India"
+    ],
+    "location_type": null,
+    "location_requirements": null,
+    "salary": null,
+    "employment_type": [
+      "Full time"
+    ],
+    "url": "https://cadence.wd1.myworkdayjobs.com/External_Careers/job/BANGALORE/Principal-Design-Engineer_R56509",
+    "source_type": "ats",
+    "source": "workday",
+    "source_domain": "cadence.wd1.myworkdayjobs.com",
+    "source_slug": null,
+    "organization_logo": null,
+    "cities_derived": [
+      "Bengaluru"
+    ],
+    "counties_derived": [
+      "Bangalore North"
+    ],
+    "regions_derived": [
+      "Karnataka"
+    ],
+    "countries_derived": [
+      "India"
+    ],
+    "locations_derived": [
+      "Bengaluru, Karnataka, India"
+    ],
+    "timezones_derived": [
+      "Asia/Kolkata"
+    ],
+    "lats_derived": [
+      12.9767936
+    ],
+    "lngs_derived": [
+      77.590082
+    ],
+    "domain_derived": "cadence.com",
+    "org_linkedin_slug": "cadence",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_min_value": null,
+    "ai_salary_max_value": null,
+    "ai_salary_unit_text": null,
+    "ai_benefits": null,
+    "ai_experience_level": "10+",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Analog Circuit Design",
+      "Serdes",
+      "Memory Interface",
+      "PCIe",
+      "GDDR",
+      "DDR",
+      "LPDDR",
+      "PLL",
+      "Clocking",
+      "Datapath",
+      "ESD",
+      "Reliability",
+      "SI",
+      "PI",
+      "Analog Design",
+      "I/O Design"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "The Principal Design Engineer will lead the design of high-speed Serdes and memory interface circuits. They will be responsible for solving complex technical challenges in analog and I/O design.",
+    "ai_requirements_summary": "Candidates must have over 8 years of experience in analog circuit design and relevant engineering degrees. Proficiency in PCIe, memory interfaces, and advanced technology nodes is required.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "ai_keywords": [
+      "Analog Circuit Design",
+      "Serdes",
+      "Memory Interface",
+      "PCIe",
+      "GDDR",
+      "DDR",
+      "LPDDR",
+      "PLL",
+      "Clocking",
+      "Datapath",
+      "ESD",
+      "Reliability",
+      "SI",
+      "PI",
+      "16nm",
+      "10nm",
+      "12nm",
+      "7nm",
+      "Analog Design",
+      "I/O Design"
+    ],
+    "ai_taxonomies_a": [
+      "Engineering",
+      "Technology",
+      "Software"
+    ],
+    "ai_education": [
+      "bachelor degree",
+      "postgraduate degree"
+    ],
+    "description_text": "At Cadence, we hire and develop leaders and innovators who want to make an impact on the world of technology.\nJob Description\nJob role: Analog Circuit Design\nExp: 8+ years Equivalent or Relevant\n\n\nEducation: BE/ B Tech/ ME/ M Tech / MS or Equivalent or Relavent\n\n\u00b7 In-depth understanding of high-speed Serdes/Memory interface circuits like I/O\u2019s,PLL\u2019s, Clocking, Datapath\u2019s.\n\u00b7 Hands on experience on PCIe Gen3/4/5/6, GDDRx/DDRx/LPDDRx memory interface circuits.\n\u00b7 Strong Analog Design and I/O Design fundamentals. Knowledge of ESD/Reliability/SI/PI.\n\u00b7 Must have excellent written and verbal communication skills as well as good problem-solving skills.\n\u00b7 Prior experience of working on cutting edge technology nodes like 16nm/10nm/12nm/7nm is added advantage.\nWe\u2019re doing work that matters. Help us solve what others can\u2019t."
+  },
+  {
+    "id": 2432837646,
+    "date_posted": "2026-10-23T04:39:00",
+    "date_created": "2026-10-25T15:03:03.51517",
+    "title": "Senior Engineer II, Multi-technology Product Design",
+    "organization": "Schneider Electric",
+    "organization_url": "https://careers.se.com",
+    "date_valid_through": "2026-10-31T06:30:00",
+    "locations": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "streetAddress": "UNAVAILABLE",
+          "postalCode": "UNAVAILABLE",
+          "addressCountry": "India"
+        }
+      }
+    ],
+    "locations_alt": null,
+    "location_type": null,
+    "location_requirements": null,
+    "salary": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "value": 0,
+        "minValue": 0,
+        "maxValue": 0,
+        "unitText": "YEAR"
+      }
+    },
+    "employment_type": [
+      "UNAVAILABLE"
+    ],
+    "url": "https://careers.se.com/jobs/135526",
+    "source_type": "ats",
+    "source": "icims",
+    "source_domain": "careers.se.com",
+    "source_slug": null,
+    "organization_logo": null,
+    "cities_derived": [
+      "Hyderabad"
+    ],
+    "counties_derived": [
+      "Bahadurpura mandal"
+    ],
+    "regions_derived": [
+      "Telangana"
+    ],
+    "countries_derived": [
+      "India"
+    ],
+    "locations_derived": [
+      "Hyderabad, Telangana, India"
+    ],
+    "timezones_derived": [
+      "Asia/Kolkata"
+    ],
+    "lats_derived": [
+      17.360589
+    ],
+    "lngs_derived": [
+      78.4740613
+    ],
+    "domain_derived": "schneider-electric.com",
+    "org_linkedin_slug": "schneider-electric",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_min_value": null,
+    "ai_salary_max_value": null,
+    "ai_salary_unit_text": null,
+    "ai_benefits": null,
+    "ai_experience_level": "10+",
+    "ai_work_arrangement": "Hybrid",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Technical Product Management",
+      "Process Automation",
+      "Technical Leadership",
+      "Distributed Control Systems",
+      "Industrial Software",
+      "Embedded Systems",
+      "Instrumentation",
+      "Control Engineering",
+      "Cybersecurity",
+      "Networking",
+      "Cloud Technologies",
+      "System Architecture",
+      "Cross-functional Leadership",
+      "Product Strategy",
+      "Business Case Development",
+      "Stakeholder Management"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "Define product strategy, roadmap priorities, and technology investment recommendations while leading cross-functional initiatives across a global organization. Engage directly with customers to validate opportunities and partner with engineering leaders to guide platform evolution and modernization.",
+    "ai_requirements_summary": "Requires a bachelor's degree in Engineering or a related technical discipline and significant experience in process automation or control systems. Candidates must demonstrate strong technical leadership, the ability to influence without authority, and expertise in industrial hardware and software architectures.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "ai_keywords": [
+      "Technical Product Manager",
+      "Process Automation",
+      "Distributed Control Systems",
+      "Foxboro DCS",
+      "EcoStruxure Automation Expert",
+      "DeltaV",
+      "Honeywell Experion",
+      "ABB 800xA",
+      "Yokogawa CENTUM",
+      "Siemens PCS",
+      "Industrial Software",
+      "Embedded Systems",
+      "Instrumentation",
+      "Control Strategy Design",
+      "Plant Operations",
+      "Cybersecurity",
+      "Networking",
+      "Cloud Technologies",
+      "System Architecture",
+      "Firmware Development",
+      "Hardware Engineering",
+      "Product Strategy",
+      "Roadmap Planning",
+      "Cross-functional Leadership",
+      "Business Case Development",
+      "Oil and Gas",
+      "Refining",
+      "Chemicals",
+      "Power Generation",
+      "Mining"
+    ],
+    "ai_taxonomies_a": [
+      "Technology",
+      "Engineering",
+      "Management & Leadership",
+      "Software",
+      "Energy"
+    ],
+    "ai_education": [
+      "bachelor degree"
+    ],
+    "description_text": "About the role\nWe're looking for a senior Technical Product Manager who combines deep process automation expertise with strong technical leadership, customer focus, and business judgment.\nYou will work across customers, engineering teams, architects, cybersecurity specialists, and business leaders to identify the most important problems worth solving, shape product and technology investments, and drive execution across a global matrixed organization.\nThis role is for someone who takes ownership, challenges assumptions, influences without authority, and enjoys turning complex ideas into delivered outcomes.\nWhat you'll do\nDefine product strategy, roadmap priorities, and technology investment recommendations.\nEngage directly with customers to understand problems, validate opportunities, and shape future offerings.\nLead cross-functional initiatives spanning software, firmware, hardware, systems, cybersecurity, networking, and cloud technologies.\nBuild alignment across globally distributed teams and drive issues to resolution.\nChallenge requirements, estimates, architectures, and plans to improve outcomes.\nDevelop business cases and investment recommendations based on customer value, strategic alignment, technical risk, and business impact.\nPartner with engineering leaders and architects to guide platform evolution and modernization.\nPresent recommendations and product strategy to customers, senior leadership, and industry audiences.\nRequired qualifications\nBachelor's degree in Engineering, Computer Science, Electrical Engineering, Controls Engineering, or a related technical discipline.\nSignificant experience in process automation, distributed control systems, industrial software, embedded systems, instrumentation, or control engineering.\nDemonstrated technical leadership experience leading complex cross-functional initiatives.\nProven ability to influence technical and business decisions without direct authority.\nStrong understanding of software, firmware, hardware, networking, cybersecurity, and systems architecture concepts.\nExcellent written, verbal, and presentation skills.\nStrongly preferred\nExperience with Foxboro DCS, EcoStruxure Automation Expert, DeltaV, Honeywell Experion, ABB 800xA, Yokogawa CENTUM, Siemens PCS, or similar DCS platforms.\nExperience in continuous process industries such as oil and gas, refining, chemicals, power generation, mining, or pulp and paper.\nBackground in instrumentation, process control, control strategy design, and plant operations.\nSoftware and/or firmware development experience.\nExperience delivering industrial hardware products.\nExperience as a Lead Engineer, System Architect, Technical Lead, Automation Consultant, or Technical Product Manager.\nWho will succeed in this role\nThe ideal candidate:\nTakes ownership of difficult problems and drives them through resolution.\nThinks like an investor, treating engineering capacity as a limited resource.\nBalances customer value, strategic importance, technical risk, and execution cost.\nIs comfortable respectfully challenging assumptions and recommendations at any organizational level.\nEarns credibility with software, firmware, hardware, systems, and cybersecurity teams.\nCan confidently engage with customers, engineers, architects, Directors, and Vice Presidents.\nDrives alignment quickly in ambiguous situations and across organizational boundaries.\nLooks for platform leverage and reusable solutions rather than one-off implementations.\nWhy this role matters\nYou will help determine where we invest, what we build, and how our process automation platforms evolve. Your work will directly influence product strategy, customer success, technology direction, and long-term business growth.\nFormer Lead Controls Engineers, Systems Architects, Technical Leads, Principal Engineers, Automation Specialists, and experienced industrial Technical Product Managers are strongly encouraged to apply.\nBring your expertise to a team that values innovation and excellence \u2014 apply today!\nRewards designed for you\nOur Total Rewards is our way of saying: We see you and we value you. It\u2019s more than just pay and benefits\u2014it\u2019s a meaningful investment in you. It is designed to help you perform, grow, feel safe, and elevate your potential. The package helps you care for yourself and your family, plan your future, grow your skills and career, collaborate in an inclusive workplace, and contribute to your community. At Schneider Electric, we\u2019re here for what matters most to you. Discover more at our Career Page.\n* Country-specific programs and initiatives may be available.\nLooking to make an IMPACT with your career?\nWhen you are thinking about joining a new team, culture matters. At Schneider Electric, our values and behaviors are the foundation for creating a great culture to support business success. We believe that our IMPACT values \u2013 Inclusion, Mastery, Purpose, Action, Curiosity, Teamwork \u2013 starts with us.\nIMPACT is also your invitation to join Schneider Electric where you can contribute to turning sustainability ambition into actions, no matter what role you play. It is a call to connect your career with the ambition of achieving a more resilient, efficient, and sustainable world.\nWe are looking for IMPACT Makers; exceptional people who turn sustainability ambitions into actions at the intersection of automation, electrification, and digitization. We celebrate IMPACT Makers and believe everyone has the potential to be one.\nBecome an IMPACT Maker with Schneider Electric \u2013 apply today!\n\u20ac40 billion global revenue\n+9% organic growth\n150 000+ employees in 100+ countries\nYou must submit an online application to be considered for any position with us. This position will be posted until filled.\nSchneider Electric aspires to be the most inclusive and caring company in the world, by providing equitable opportunities to everyone, everywhere, and ensuring all employees feel uniquely valued and safe to contribute their best. We mirror the diversity of the communities in which we operate, and \u2018inclusion\u2019 is one of our core values. We believe our differences make us stronger as a company and as individuals and we are committed to championing inclusivity in everything we do. \nAt Schneider Electric, we uphold the highest standards of ethics and compliance, and we believe that trust is a foundational value. Our Trust Charter is our Code of Conduct and demonstrates our commitment to ethics, safety, sustainability, quality and cybersecurity, underpinning every aspect of our business and our willingness to behave and respond respectfully and in good faith to all our stakeholders. You can find out more about our Trust Charter here\n\nSchneider Electric is an Equal Opportunity Employer. It is our policy to provide equal employment and advancement opportunities in the areas of recruiting, hiring, training, transferring, and promoting all qualified individuals regardless of race, religion, color, gender, disability, national origin, ancestry, age, military status, sexual orientation, marital status, or any other legally protected characteristic or conduct."
+  },
+  {
+    "id": 2432303853,
+    "date_posted": "2026-10-22T00:00:00",
+    "date_created": "2026-10-24T21:01:31.056273",
+    "title": "Senior Industrial Design Engineer",
+    "organization": "Global Water Solutions",
+    "organization_url": "https://globalwater.bamboohr.com/careers",
+    "date_valid_through": null,
+    "locations": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hosur",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "635124",
+          "addressCountry": "India"
+        }
+      }
+    ],
+    "locations_alt": null,
+    "location_type": null,
+    "location_requirements": null,
+    "salary": null,
+    "employment_type": [
+      "Full-Time"
+    ],
+    "url": "https://globalwater.bamboohr.com/careers/153",
+    "source_type": "ats",
+    "source": "bamboohr",
+    "source_domain": "globalwater.bamboohr.com",
+    "source_slug": null,
+    "organization_logo": "https://images4.bamboohr.com/199378/logos/cropped.jpg?v=32",
+    "cities_derived": null,
+    "counties_derived": [
+      "Hosur"
+    ],
+    "regions_derived": [
+      "Tamil Nadu"
+    ],
+    "countries_derived": [
+      "India"
+    ],
+    "locations_derived": [
+      "Hosur, Tamil Nadu, India"
+    ],
+    "timezones_derived": [
+      "Asia/Kolkata"
+    ],
+    "lats_derived": [
+      12.854750308690328
+    ],
+    "lngs_derived": [
+      77.89309029765391
+    ],
+    "domain_derived": "globalwatersolutions.com",
+    "org_linkedin_slug": "globalwatersolutions",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_min_value": null,
+    "ai_salary_max_value": null,
+    "ai_salary_unit_text": null,
+    "ai_benefits": [
+      "Health insurance",
+      "Performance-based annual bonus"
+    ],
+    "ai_experience_level": "5-10",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Industrial design",
+      "Mechanical engineering",
+      "Product development",
+      "SolidWorks",
+      "CAD",
+      "DFM",
+      "DFA",
+      "Prototyping",
+      "Electro-mechanical design",
+      "Plastic parts design",
+      "Sheet metal design",
+      "Product architecture",
+      "Manufacturing support",
+      "Technical leadership",
+      "Cross-functional collaboration"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "Lead industrial design and product engineering efforts for next-generation water treatment and dispensing systems. Collaborate with cross-functional teams to integrate components and ensure designs are manufacturable, service-friendly, and market-ready.",
+    "ai_requirements_summary": "Requires a bachelor's degree in Industrial or Mechanical Engineering or a related field. Candidates must have at least 7 years of relevant experience in product development and strong proficiency in CAD software like SolidWorks.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "ai_keywords": [
+      "Industrial Design",
+      "Mechanical Engineering",
+      "Product Development",
+      "Water Treatment",
+      "Filtration Systems",
+      "SolidWorks",
+      "CAD",
+      "DFM",
+      "DFA",
+      "Prototyping",
+      "Electro-mechanical",
+      "Plastic Parts",
+      "Sheet Metal",
+      "Manufacturing",
+      "Product Architecture",
+      "Hosur",
+      "Global Water Solutions",
+      "Product Enclosures",
+      "Technical Ownership",
+      "Mass Production",
+      "Tooling",
+      "Sensors",
+      "Valves",
+      "Pumps",
+      "HMI",
+      "PCB",
+      "Compliance",
+      "Engineering",
+      "Product Design",
+      "Industrial Engineering"
+    ],
+    "ai_taxonomies_a": [
+      "Engineering",
+      "Manufacturing",
+      "Art & Design",
+      "Technology"
+    ],
+    "ai_education": [
+      "bachelor degree"
+    ],
+    "description_text": "Job Title: Senior Industrial Design Engineer\nLocation: Hosur, Tamil Nadu \u2013 635103\nCompany: Global Water Solutions (GWS)\nWork Type: Full-time | 5 Days Work from Office\nReporting To: Global Compliance and Product Director\nAvailability: ASAP / 1 Month\n\nAbout Us\nGlobal Water Solutions (GWS) is a global leader in water enhancement and pressure tank solutions, delivering clean water technologies worldwide. As part of our continued expansion in India, we are strengthening our in-house engineering and product development capabilities to support next-generation water treatment, dispensing, and filtration systems.\nThis role is part of a strategic initiative to build strong internal industrial design and product engineering capability at our Hosur facility, enabling faster execution, improved product quality, and reduced dependency on limited external resources.\n\nJob Summary\nWe are seeking a Senior Industrial Design Engineer to lead product design and industrial engineering efforts for next-generation water treatment and dispensing systems. This is a hands-on individual contributor (IC) role focused on translating product concepts into practical, manufacturable, and market-ready designs.\nThe role will play a critical part in developing compact RO systems, UF systems, second-generation Q Tap systems, and product enclosures for multi-stage filtration platforms. The ideal candidate combines strong visual design sense with practical mechanical engineering expertise and is capable of driving designs from concept through production.\n\nKey Responsibilities\nIndustrial Design & Product Development\nLead industrial design and product engineering for next-generation water treatment and dispensing products.\nDesign and improve product casings, external housings, coverings, and overall product layouts.\nDevelop solutions for compact RO systems, UF systems, Q Tap platforms, and multi-stage filter housings.\nBalance aesthetics, functionality, cost, manufacturability, and serviceability in all designs.\nProduct Engineering & Integration\nCollaborate with electrical and electronics teams to integrate PCBs, HMIs, pumps, valves, sensors, filters, and tubing into practical product assemblies.\nOptimize product architecture for usability, serviceability, and assembly efficiency.\nEnsure high-quality fit, finish, and overall product presentation.\nPrototyping & Manufacturing\nSupport prototype development, design iterations, pilot builds, and production transfer.\nWork closely with tooling vendors, suppliers, and factory teams to ensure design feasibility for mass production.\nApply strong DFM (Design for Manufacturing) and DFA (Design for Assembly) principles.\nExecution & Capability Building\nImprove internal product design standards and industrial execution quality.\nContribute to building scalable in-house product design capability in India.\nSupport multiple overlapping development programs with strong technical ownership.\n\nQualifications & Requirements\nEducation: Bachelor\u2019s degree in Industrial Engineering, Mechanical Engineering, Product Design, Industrial Design, or related field.\nExperience: Minimum 7 years of relevant experience in industrial design, product engineering, or mechanical product development.\nTechnical Skills\nStrong CAD and product layout capability (SolidWorks or equivalent preferred).\nHands-on experience with product enclosures, plastic parts, sheet metal, and manufacturing processes.\nSolid understanding of DFM, DFA, prototyping, and production release.\nExperience designing electro-mechanical or appliance-type products.\nBehavioral & Functional Skills\nAbility to translate concepts into practical, manufacturable products.\nStrong cross-functional collaboration skills across engineering, sourcing, and manufacturing teams.\nHands-on, execution-oriented mindset (not limited to design office work).\nAbility to work independently and drive outcomes in a fast-paced environment.\n\nPreferred Additional Qualifications\nExperience in water treatment systems, filtration products, dispensers, pumps, or similar equipment.\nBackground in consumer appliances or durable electro-mechanical products.\nStrong visual design judgment combined with engineering discipline.\nExperience working with global teams and international product standards.\n\nExpectations\nStrengthen in-house industrial design and product engineering capability in India.\nAccelerate development of next-generation products.\nDeliver designs that are manufacturable, service-friendly, and commercially competitive.\nAct as a key technical contributor across multiple product development programs.\n\nWhy Join Us?\nOpportunity to shape the design and development of next-generation global products.\nHigh ownership and visibility within a growing international organization.\nWork across cross-functional teams including engineering, manufacturing, and global stakeholders.\nPlay a key role in building India\u2019s product design capability.\n\nWhat We Offer\nCompetitive salary package\nHealth insurance\nInternational exposure\nPerformance-based annual bonus\nProfessional, supportive, and growth-oriented work environment\n\nJoin Our Team\nIf you are a hands-on industrial design engineer who enjoys turning concepts into real, manufacturable products and wants to build impactful global solutions, we encourage you to apply.\nWebsite: www.globalwatersolutions.com"
+  },
+  {
+    "id": 2432522471,
+    "date_posted": "2026-10-06T07:31:28",
+    "date_created": "2026-10-25T02:42:18.441842",
+    "title": "Sr. CAE Engineer",
+    "organization": "Whirlpool",
+    "organization_url": "whirlpool.com",
+    "date_valid_through": null,
+    "locations": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": {
+            "@type": "Country",
+            "name": "IN"
+          },
+          "addressLocality": "Pune",
+          "addressRegion": "MH,IN"
+        }
+      }
+    ],
+    "locations_alt": null,
+    "location_type": null,
+    "location_requirements": null,
+    "salary": null,
+    "employment_type": [
+      "FULL_TIME"
+    ],
+    "url": "https://jobs.whirlpool.com/careers/job/34404478341-sr-cae-engineer-pune-maharashtra-ind",
+    "source_type": "ats",
+    "source": "eightfold",
+    "source_domain": "jobs.whirlpool.com",
+    "source_slug": null,
+    "organization_logo": "",
+    "cities_derived": [
+      "Pune"
+    ],
+    "counties_derived": [
+      "Pune District"
+    ],
+    "regions_derived": [
+      "Maharashtra"
+    ],
+    "countries_derived": [
+      "India"
+    ],
+    "locations_derived": [
+      "Pune, Maharashtra, India"
+    ],
+    "timezones_derived": [
+      "Asia/Kolkata"
+    ],
+    "lats_derived": [
+      18.5213738
+    ],
+    "lngs_derived": [
+      73.8545071
+    ],
+    "domain_derived": "whirlpool.com",
+    "org_linkedin_slug": "whirlpool-corporation",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_min_value": null,
+    "ai_salary_max_value": null,
+    "ai_salary_unit_text": null,
+    "ai_benefits": null,
+    "ai_experience_level": "2-5",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "CFD",
+      "Ansys Workbench",
+      "Star CCM+",
+      "Fluent",
+      "Openfoam",
+      "Spaceclaim",
+      "Creo",
+      "Thermodynamics",
+      "Fluid dynamics",
+      "Heat transfer",
+      "CAD modeling",
+      "Mesh generation",
+      "Boundary conditions",
+      "Numerical modeling",
+      "Data interpretation",
+      "Critical thinking"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "The role involves supporting the improvement of fluid and thermal performance of products through CFD simulations. You will translate physical problems into numerical models and provide design solutions based on simulation results.",
+    "ai_requirements_summary": "Candidates must hold an M.Tech degree in Mechanical, Automobile, or Aerospace Engineering. A minimum of 2-4 years of experience in CFD simulations and strong knowledge of engineering fundamentals are required.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "ai_keywords": [
+      "CFD",
+      "Computational Fluid Dynamics",
+      "Thermal Simulation",
+      "Flow Simulation",
+      "Ansys Workbench",
+      "Star CCM+",
+      "Openfoam",
+      "Spaceclaim",
+      "Creo",
+      "Thermodynamics",
+      "Fluid Dynamics",
+      "Heat Transfer",
+      "CAD",
+      "Mesh Generation",
+      "Boundary Conditions",
+      "Numerical Modeling",
+      "Product Development",
+      "Mechanical Engineering",
+      "Automobile Engineering",
+      "Aerospace Engineering",
+      "Simulation Strategy",
+      "Data Validation",
+      "Component Level Simulation",
+      "Subsystem Level Simulation",
+      "Technical Reporting",
+      "Patent Filing",
+      "Knowledge Management",
+      "Engineering Fundamentals",
+      "Product Life Cycle",
+      "Innovation"
+    ],
+    "ai_taxonomies_a": [
+      "Engineering",
+      "Manufacturing",
+      "Technology",
+      "Science & Research"
+    ],
+    "ai_education": [
+      "postgraduate degree"
+    ],
+    "description_text": "About Whirlpool Corporation\nWhirlpool Corporation (NYSE: WHR) is a leading home appliance company, in constant pursuit of improving life at home. As the only major U.S.-based manufacturer of kitchen and laundry appliances, the company is driving meaningful innovation to meet the evolving needs of consumers through its iconic brand portfolio, including Whirlpool, KitchenAid, JennAir, Maytag, Amana, Brastemp, Consul, and InSinkErator. In 2024, the company reported approximately $17 billion in annual sales - close to 90% of which were in the Americas - 44,000 employees, and 40 manufacturing and technology research centers. Additional information about the company can be found at WhirlpoolCorp.com. \nAbout GTEC\nTransforming Vision into Reality: The Global Technology & Engineering Centre. Where India\u2019s world-class talent architects the next generation of home innovation.\nThe team you will be a part of\nThe Engineering team discovers, develops and evaluates new product ideas, enhancements, or strategic product extensions, and translates research discoveries into usable and marketable products. Leads, plans and tracks all phases of the product life cycle, from inception to introduction into the marketplace. Coordinates with various functions to ensure successful product development and implementation.\nThis role in summary\nResponsible for supporting in improvement of Fluid and Thermal performance of Products/Projects through CFD Simulations\nYour responsibilities will include\nTechnical Expertise: \nProficient in component/subsystem/system level Pre Processing tool (Ansys Workbench /CCM+/Spaceclaim /Creo etc )\nProficient in Flow simulation of component/subsystem level using any one of CFD tools (Fluent /Star CCM/Openfoam)\nProficient in Thermal simulation of component/subsystem level using any one of CFD tools (Fluent /Star CCM/Openfoam)\nRequired Technical Experience:\nShould have Good knowledge of CFD fundamentals \nShould be able to prepare the simplified CAD models required. \nDefine the mesh attributes and assign the required boundary conditions\nPerform the CFD simulations, analyze the results, prepare proper reports with appropriate conclusions and suggestions to improve the product performance.\nHands on experience on flow and thermal problems.\nGood knowledge of Engineering fundamentals of Thermodynamics, Fluid dynamics, and Heat transfer\nShould be able to handle projects in the area of Fluid Flow and Heat transfer\nGood Results interpretation skills.\nCritical thinking for effectively approaching to conclusions\nMinimum requirements\nEducation: \nM.tech from Mechanical/Automobile/Aerospace Engineering.\nExperience: 2-4 Years \nResponsibilities:\nTranslate Simulation Requests, Physical Problems into Numerical Models.\nPrepare the plan for simulation activities and align the simulation strategy with the requester\nExecute CFD Simulation projects as an individual contributor\nEstablishing correlations and validations at Component/Subsystems Level\nGood in problem solving\nHave effective communication, aligned with the project requirement.\nProvide design solutions based on simulations.\nPreferred skills and experiences\nKEY DELIVERABLES\nPatents/ Research / External presentations :\nRigor to publish/present papers in Technical Forums\nTechnical rigor for patent filing and desirable to have patents\nKnowledge Management :\nOpen in sharing knowledge and thoughts\nProactive knowledge documentation and sharing within and outside stakeholders\nTECHNICAL\nKnowledge of Fluid & Thermal Science .\nKnowledge of CFD fundamentals \nBasic understanding flow and thermal Measurement Data\nProficiency in Simulation tools like Fluent/Star CCM/Openfoam\nResults interpretation skills.\nConnect with us and learn more about Whirlpool Corporation\nSee what it's like to work at Whirlpool by visiting Whirlpool Careers. Additional information about the company can be found on Facebook, Twitter, LinkedIn, Instagram and YouTube.\nWhirlpool Corporation is committed to equal employment opportunity and prohibits any discrimination on the basis of race or ethnicity, religion, sex, pregnancy, gender expression or identity, sexual orientation, age, physical or mental disability, veteran status, or any other category protected by applicable law.\nJoin the Powerhouse of Home Innovation.\nGTEC is more than an engineering centre; it is where the future of the home is being designed, tested, and perfected. We invite you to be part of a team that is not just witnessing the digital revolution but leading it\u2014creating a lasting impact on everyday lives, one innovation at a time.\nRead more"
+  }
+]

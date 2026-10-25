@@ -23,13 +23,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Job Agent
-        env:
-          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python main.py
+      - name: Save Seen Jobs State
+        run: |
+          git config --global user.name 'JobScoutBot'
+          git config --global user.email 'bot@noreply.github.com'
+          git add seen_jobs.json || true
+          git diff --staged --quiet || (git commit -m "Update seen jobs" && git pull --rebase origin main && git push)
 
       - name: Save Seen Jobs State
         run: |

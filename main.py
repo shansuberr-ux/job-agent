@@ -186,7 +186,7 @@ Respond STRICTLY in valid JSON with keys: "lane", "jd_hook", "specific_gaps".
         "generationConfig": {"responseMimeType": "application/json"},
     }
 
-    for model_name in models_to_try:
+   for model_name in models_to_try:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent"
         try:
             r = requests.post(url, headers=headers, json=payload, timeout=30)
@@ -196,4 +196,102 @@ Respond STRICTLY in valid JSON with keys: "lane", "jd_hook", "specific_gaps".
                 print(f"✅ Tailored with {model_name}")
                 return json.loads(text_out)
             else:
-                print(f"⚠️ {model_
+                print(f"⚠️ {model_name} returned {r.status_code}: {r.text[:200]}")
+        except Exception as e:
+            print(f"❌ Error on {model_name}: {e}")
+
+    return {
+        "lane": "consumer",
+        "jd_hook": "mechanical design, simulation, and DFM",
+        "specific_gaps": "Review core JD requirements.",
+    }
+
+
+def main():
+    print("--- Starting Shan Job Scout Agent ---")
+    print(
+        f"Secrets Check -> RAPIDAPI: {bool(RAPIDAPI_KEY)}, GEMINI: {bool(GEMINI_API_KEY)}, TG_TOKEN: {bool(TELEGRAM_BOT_TOKEN)}, TG_CHAT: {bool(TELEGRAM_CHAT_ID)}"
+    )
+
+    seen_jobs = load_seen_jobs()
+    jobs = fetch_jobs()
+
+    if not jobs:
+        send_telegram_message(
+            "🤖 <b>Job Scout Heartbeat:</b> Agent connected to RapidAPI, but 0 matching jobs were returned in this batch. Check GitHub Actions logs for details."
+        )
+        return
+
+    new_count = 0
+    for job in jobs:
+        job_id = str(
+            job.get("id")
+            or job.get("url")
+            or (job.get("title", "") + "_" + job.get("organization", ""))
+        )
+        if not job_id or job_id in seen_jobs:
+            continue
+
+        new_count += 1
+        title = job.get("title", "Mechanical Engineer")
+        company = job.get("organization") or job.get("company") or "Company"
+        location = str(job.get("locations_derived") or job.get("location") or "India")
+        url = job.get("url") or job.get("apply_url") or "#"
+        desc = job.get("description_text") or job.get("description") or ""
+
+        print(f"Processing new job: {title} at {company} ({location})")
+
+        loc_lower = location.lower()
+        is_primary = any(city in loc_lower for city in PRIMARY_LOCATIONS)
+        loc_flag = f"🟢 PRIMARY ({location})" if is_primary else f"🟡 SECONDARY ({location})"
+
+        analysis = classify_and_tailor(company, title, location, desc)
+        lane_key = analysis.get("lane", "consumer")
+        if lane_key not in LANES:
+            lane_key = "consumer"
+        lane_info = LANES[lane_key]
+
+        subject = lane_info["subject"].format(company=company)
+        note = lane_info["note_template"].format(
+            name="[Name]",
+            company=company,
+            title=title,
+            jd_hook=analysis.get("jd_hook", "mechanical design and analysis"),
+        )
+
+        net_links = build_networking_links(company, location, lane_key)
+        net_text = "\n".join(
+            [
+                f"• <b>{role}:</b> <a href='{g_url}'>Google X-Ray</a> | <a href='{l_url}'>LinkedIn Search</a>"
+                for role, (g_url, l_url) in net_links.items()
+            ]
+        )
+
+        telegram_msg = (
+            f"🎯 <b>{title} — {company}</b>\n"
+            f"📍 {loc_flag}\n"
+            f"🏷 <b>Lane:</b> {lane_info['name']} (<code>{lane_info['resume']}</code>)\n"
+            f"🔗 <a href='{url}'>Click Here to Review & Apply</a>\n\n"
+            f"👥 <b>Networking Links (No Login Needed):</b>\n{net_text}\n\n"
+            f"✉️ <b>Tailored Outreach Draft:</b>\n"
+            f"<b>Subject:</b> <code>{subject}</code>\n"
+            f"<pre>{note}</pre>\n\n"
+            f"⚠️ <b>JD-Specific Gaps:</b>\n{analysis.get('specific_gaps')}\n\n"
+            f"📚 <b>Revise Before Interview:</b>\n{lane_info['revise']}"
+        )
+
+        send_telegram_alert(telegram_msg, lane_info["resume"])
+        seen_jobs.add(job_id)
+
+    save_seen_jobs(seen_jobs)
+
+    if new_count == 0:
+        send_telegram_message(
+            f"🤖 <b>Job Scout Heartbeat:</b> Checked {len(jobs)} jobs, but all of them were already sent to you previously (stored in <code>seen_jobs.json</code>). Delete <code>seen_jobs.json</code> in GitHub if you want to re-receive them!"
+        )
+
+    print(f"--- Finished Run. Sent {new_count} new job alerts. ---")
+
+
+if __name__ == "__main__":
+    main()

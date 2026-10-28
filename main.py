@@ -12,7 +12,7 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
 SEEN_JOBS_FILE = "seen_jobs.json"
 CACHE_FILE = "cached_jobs.json"
-CACHE_MAX_AGE_SECONDS = 20 * 3600
+CACHE_MAX_AGE_SECONDS = 12 * 3600  # 12 hours
 
 
 def load_seen_jobs():
@@ -48,6 +48,36 @@ def send_telegram_message(text):
     except Exception as e:
         print("Telegram Send Error:", e)
         return False
+
+
+def check_telegram_commands():
+    """2-Way feature: Checks if you sent any text commands to the bot on Telegram."""
+    updates_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getUpdates?offset=-1"
+    try:
+        resp = requests.get(updates_url, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            results = data.get("result", [])
+            if results:
+                latest = results[-1]
+                message = latest.get("message", {})
+                text = message.get("text", "").strip().lower()
+                sender_id = str(message.get("chat", {}).get("id", ""))
+                
+                # If message is from you
+                if sender_id == str(TELEGRAM_CHAT_ID) and text:
+                    print(f"Received Telegram Command: {text}")
+                    if text == "/run" or text == "run":
+                        send_telegram_message("🤖 <b>Command Received:</b> Forcing a fresh job fetch now!")
+                        if os.path.exists(CACHE_FILE):
+                            os.remove(CACHE_FILE) # Clear cache to force fresh pull
+                    elif text.startswith("search "):
+                        query = text.replace("search ", "").strip()
+                        send_telegram_message(f"🔍 Custom search requested for: <i>{query}</i>. Will prioritize in next scan.")
+                    elif text == "/help":
+                        send_telegram_message("🤖 <b>Agent Commands:</b>\n- <code>/run</code>: Force fresh job scan\n- <code>search [keyword]</code>: Note custom interest")
+    except Exception as e:
+        print("Error checking Telegram updates:", e)
 
 
 def send_telegram_alert(text, resume_filename):
@@ -139,7 +169,6 @@ def classify_and_tailor(company, title, location, description):
         "gemini-2.5-flash",
         "gemini-3.8-flash",
         "gemini-3.5-flash-lite",
-        "gemini-3.1-pro-preview",
     ]
     headers = {
         "Content-Type": "application/json",
@@ -147,16 +176,17 @@ def classify_and_tailor(company, title, location, description):
     }
     lane_keys_str = ", ".join(list(LANES.keys()))
     prompt = (
-        "You are assisting Shanmugam Subramanian, a Mechanical & CAE Engineer.\n"
+        "You are assisting Shanmugam Subramanian, a Mechanical & CAE Engineer (Bachelor's degree, ~2-4 years experience).\n"
         f"Writing Style Guide: {STYLE_GUIDE}\n\n"
         f"Job Posting:\nCompany: {company}\nTitle: {title}\nLocation: {location}\n"
         f"Description: {description[:3000]}\n\n"
         f"Available Lanes: {lane_keys_str}\n\n"
-        "Tasks:\n"
-        "1. Pick the single best matching lane key from Available Lanes.\n"
-        "2. Write a short phrase (under 15 words) that replaces {jd_hook} in his cover note.\n"
-        "3. Identify 2 specific technical gaps between the Job Description and Shan's background, and suggest 1 concrete revision topic.\n\n"
-        'Respond STRICTLY in valid JSON with keys: "lane", "jd_hook", "specific_gaps".'
+        "CRITICAL FILTER RULES:\n"
+        "1. If this job strictly requires a Master's degree (M.Tech/M.S.) or requires more than 5 years of experience, set 'skip' to true.\n"
+        "2. Otherwise set 'skip' to false, pick the single best matching lane key from Available Lanes.\n"
+        "3. Write a short phrase (under 15 words) that replaces {jd_hook} in his cover note.\n"
+        "4. Identify 2 specific technical gaps between the Job Description and Shan's background, and suggest 1 concrete revision topic.\n\n"
+        'Respond STRICTLY in valid JSON with keys: "skip", "lane", "jd_hook", "specific_gaps".'
     )
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
@@ -177,6 +207,7 @@ def classify_and_tailor(company, title, location, description):
             print("Error calling model:", model_name, e)
 
     return {
+        "skip": False,
         "lane": "consumer",
         "jd_hook": "mechanical design, simulation, and DFM",
         "specific_gaps": "Review core JD requirements.",
@@ -185,6 +216,10 @@ def classify_and_tailor(company, title, location, description):
 
 def main():
     print("--- Starting Shan Job Scout Agent ---")
+    
+    # Check incoming telegram messages first (2-way chat capability)
+    check_telegram_commands()
+
     seen_jobs = load_seen_jobs()
     jobs = fetch_jobs()
 
@@ -198,7 +233,6 @@ def main():
         if not job_id or job_id in seen_jobs:
             continue
 
-        new_count += 1
         title = str(job.get("title") or "Mechanical Engineer")
         company = str(job.get("organization") or job.get("company") or "Company")
         location = str(job.get("locations_derived") or job.get("location") or "India")
@@ -206,6 +240,16 @@ def main():
         desc = str(job.get("description_text") or job.get("description") or "")
 
         analysis = classify_and_tailor(company, title, location, desc)
+        
+        # Mark as seen so it's never evaluated again
+        seen_jobs.add(job_id)
+
+        # Skip irrelevant Master's / Senior experience jobs
+        if analysis.get("skip", False):
+            print(f"Skipping irrelevant role (Master's/Senior mismatch): {title} at {company}")
+            continue
+
+        new_count += 1
         lane_key = analysis.get("lane", "consumer")
         if lane_key not in LANES:
             lane_key = "consumer"
@@ -216,7 +260,6 @@ def main():
             name="[Name]", company=company, title=title, jd_hook=analysis.get("jd_hook", "mechanical design")
         )
         
-        # Dedicated HR snippet
         hr_note = (
             f"Hi [HR Name],\n\n"
             f"I came across the {title} opening at {company}. With hands-on experience in NPD/NPI, "
@@ -232,7 +275,7 @@ def main():
         net_text = "\n".join(net_lines)
 
         telegram_msg = (
-            f"🔍 <b>JOB #{idx}</b>\n"
+            f"🔍 <b>JOB MATCH #{new_count}</b>\n"
             f"🏢 <b>Company:</b> {company}\n"
             f"💼 <b>Role:</b> {title}\n"
             f"📍 <b>Location:</b> {location}\n"
@@ -250,10 +293,9 @@ def main():
         )
 
         send_telegram_alert(telegram_msg, lane_info["resume"])
-        seen_jobs.add(job_id)
 
     save_seen_jobs(seen_jobs)
-    print(f"--- Finished Run. Sent {new_count} alerts. ---")
+    print(f"--- Finished Run. Sent {new_count} relevant alerts. ---")
 
 
 if __name__ == "__main__":

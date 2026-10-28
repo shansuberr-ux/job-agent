@@ -2,8 +2,8 @@ name: Shan Job Scout Agent
 
 on:
   schedule:
-    - cron: '30 3 * * *' # Runs once a day at 9:00 AM IST (protects your 25 free monthly API calls)
-  workflow_dispatch:      # Lets you trigger a test run manually
+    - cron: '0 */4 * * *' # Can safely run every 4 hours now!
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -35,5 +35,5 @@ jobs:
         run: |
           git config --global user.name 'JobScoutBot'
           git config --global user.email 'bot@noreply.github.com'
-          git add seen_jobs.json cached_jobs.json || true
-          git diff --staged --quiet || (git commit -m "Update job cache and state" && git pull --rebase origin main && git push)
+          git add seen_jobs.json || true
+          git diff --staged --quiet || (git commit -m "Update seen jobs state" && git pull --rebase origin main && git push)

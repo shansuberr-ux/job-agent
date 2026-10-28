@@ -2,8 +2,13 @@ name: Shan Job Scout Agent
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Can safely run every 4 hours now!
+    - cron: '0 */4 * * *'
   workflow_dispatch:
+    inputs:
+      custom_query:
+        description: 'Custom search query from Telegram'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -29,6 +34,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CUSTOM_QUERY: ${{ github.event.inputs.custom_query }}
         run: python main.py
 
       - name: Save Seen Jobs State
